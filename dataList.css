@@ -1,0 +1,14 @@
+.dataList{
+	margin-left: 200px;
+	margin-top: 10px;
+	float: left;
+	width: 780px;
+	color: black;
+	padding: 5px;
+	border: 1px solid;
+	height: 500px;
+}
+.form{
+	margin-left: 370px;
+	margin-top: 40px;
+}

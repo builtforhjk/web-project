@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>srtp项目数据查询</title>
+	<link rel="stylesheet" type="text/css" href="dataList.css">
+	<script type="text/javascript" src="project.js"></script>
+</head>
+<body>
+	<div class="form">
+		<form method="post" action="" name="form1">
+		<input type="button" onclick="monitor(this)" value="开始" id="begin">
+		<input type="button" onclick="save()" value="保存" disabled=true id="store">
+		<span style="font-size: 13px">历史数据查询:</span>
+		<input type="date" name="requestDate">
+		<input type="button" onclick="queryProj()" value="搜索">
+	</form>
+	</div>
+	<div class="dataList">
+		<span style="font-size: 15px" id="array"></span>
+	</div>
+	<script type="text/javascript">
+		var go = setInterval("onMonitor()",1000);
+	</script>
+</body>
+</html>

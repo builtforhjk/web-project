@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="myScript.js"></script>
+</head>
+<body>
+<h2 style="font-size: 20px; text-align: center;" id="heading">指标一</h2>
+<section>
+	<div class="tableSection">
+		<table width="300" border="1">
+		<tr>
+			<th align="left">检测时刻(时:分:秒)</th>
+			<th align="right">数值(单位)</th>
+		</tr>
+		<tr>
+			<td align="left" id="td0"></td>
+			<td align="right" id="tds0"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td1"></td>
+			<td align="right" id="tds1"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td2"></td>
+			<td align="right" id="tds2"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td3"></td>
+			<td align="right" id="tds3"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td4"></td>
+			<td align="right" id="tds4"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td5"></td>
+			<td align="right" id="tds5"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td6"></td>
+			<td align="right" id="tds6"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td7"></td>
+			<td align="right" id="tds7"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td8"></td>
+			<td align="right" id="tds8"></td>
+		</tr>
+		<tr>
+			<td align="left" id="td9"></td>
+			<td align="right" id="tds9"></td>
+		</tr>
+		</table>
+	</div>
+	<div class="canvasAlign">
+		<canvas id="myCanvas" width="700" height="300">
+		<strong>error</strong>
+	</canvas>
+	</div>
+</section>
+<script type="text/javascript">
+	importDataFromMysql();
+	borderDraw();
+	var int = setInterval("animateLineChartDraw()",15);
+</script>
+</body>
+</html>
